@@ -1,4 +1,4 @@
-package com.boot.phani.budget.resources;
+package com.boot.phani.budget.service;
 
 
 import java.util.List;
@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.boot.phani.budget.service.ProductService;
 import com.boot.phani.domain.Product;
 import com.boot.phani.repositories.ProductRepository;
 
@@ -15,18 +14,21 @@ import com.boot.phani.repositories.ProductRepository;
 @Transactional
 public class ProductServiceImpl implements ProductService {
 
-	@Autowired
-	private ProductRepository productRepository;
+	//@Autowired
+	//private ProductRepository productRepository;
 
 	public List<Product> findAllProducts() {
-		return productRepository.findAll();
+		//return productRepository.findAll();
+		return null;
 	}
 
 	public Product findByName(String name) {
-		return productRepository.findByName(name);
+		//return productRepository.findByName(name);
+		return null;
 	}
 
 	public Product findById(Long productId) {
-		return productRepository.findOne(productId);
+		//return productRepository.findOne(productId);
+		return null;
 	}
 }
